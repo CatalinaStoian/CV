@@ -1,0 +1,222 @@
+/*Our App*/
+body {
+  font-family: Montserrat;
+  background-color: #f6f6fa;
+  margin: 0;
+  padding: 0;
+}
+.app-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+}
+/*Sidebar*/
+.sidebar-section {
+  background-color: rgb(28, 137, 151);
+  color: white;
+}
+.contact-container {
+  padding-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img-contact {
+  margin-right: 20px;
+}
+.contact-header {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.img-profile {
+  border-radius: 200px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#mobil-menu {
+  display: none;
+}
+.contact-phone {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.contact-email {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact-location {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.contact-location {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.contact-element {
+  margin-top: -12px;
+  margin-left: -15px;
+}
+.competente-section {
+  padding-left: 20px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.competente-header {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 40px;
+}
+.competente-list {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -10px;
+  margin-left: -10;
+}
+
+/*Main Content*/
+.right-side-container {
+  padding-left: 88px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+}
+.about-me-profession {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: rgb(28, 137, 151);
+}
+.about-me-name {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+}
+.work-experience-section {
+  margin-top: 20px;
+}
+.work-experience-header {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.company-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.company-info {
+  color: rgb(28, 137, 151);
+  margin-left: 10px;
+}
+.company-time {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #a8a8a8;
+  margin-top: -10px;
+}
+.company-elements-list {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #595959;
+  margin-left: -15px;
+  margin-top: -10px;
+}
+.company-container {
+  margin-top: -10px;
+}
+.mobil-menu {
+  display: none;
+}
+
+/*Mobil*/
+@media (max-width: 768px) {
+  .app-wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .sidebar-section {
+    width: 100%;
+    justify-content: center;
+  }
+  .right-side-container {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .mobil-menu {
+    display: block;
+    background: transparent;
+    border: none;
+    margin-left:10px;
+    cursor: pointer;
+    width: 50px;
+  }
+  #mobil-menu {
+    display: none;
+  }
+
+  .sidebar-section #mobil-menu:not(:checked) ~ .sidebar-information {
+    display: none;
+  }
+  .about-me-profession{
+    margin-left: 10px;
+  }
+  .about-me-name{
+    font-size: 25px;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-left: 15px;
+  }
+  .about-me-summary{
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .work-experience-section{
+margin-left: 15px;
+margin-right: 10px;
+  }
+  .work-experience-header{
+    font-size: 18px;
+  }
+  .work-experience-section{
+    margin-left: 15px;
+  }
+  .competente-header{
+    font-size: 18px;
+  }
+  .company-elements-list{
+    font-size: 14px;
+  }
+  .company-container .about-me-summary p{
+    font-size: 12px;
+  }
+}
